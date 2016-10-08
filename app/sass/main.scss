@@ -19,13 +19,13 @@ $Myr: 'Myriad', Arial, sans-serif;
 	max-width: 1160px;
 	height: 206px;
 	margin: $auto; 
-	&__logo{
+	.logo{
 		float: left;
 		margin-top: 37px;
 		margin-left: 4px;
 		padding-bottom: 37px;
 	}
-	&__social {
+	.icon {
 		float: right;
 		position: relative;
 		overflow: hidden;
@@ -46,10 +46,10 @@ $Myr: 'Myriad', Arial, sans-serif;
 			}
 				&--second {
 					width: 16px;
-					background-position: -16px 0;
+					background-position: -15px 1px;
 					&:hover {
 						transition-delay: 0.1s;
-						background-position: -15px -24px;
+						background-position: -15px -23px;
 					}
 				}
 				&--third {
@@ -79,12 +79,12 @@ $Myr: 'Myriad', Arial, sans-serif;
 			}
 		}
 	}
-	&__nav{
+	.navigation {
 		clear: $clear;
 		height: 56px;
 		background-color: $grey;
 		margin-bottom: 40px;
-		&__menu {
+		.nav {
 			list-style: none;
 			float: left;
 			&__item {
@@ -111,7 +111,7 @@ $Myr: 'Myriad', Arial, sans-serif;
 				}
 			}
 		}
-		&__search {
+		.search {
 			float: right;
 			margin: 8px;
 			height: 40px;
@@ -125,15 +125,23 @@ $Myr: 'Myriad', Arial, sans-serif;
 				background-color: #35383c;
 				border: none;
 				padding-left: 15px;
+				&::-webkit-input-placeholder { color:#5a5c5e; }
+				&::-webkit-input-placeholder { color:#5a5c5e; }
+				&:focus {
+					outline: none;
+				}
 			}
 			&__btn {
 				position: absolute;
-				margin-left: 210px;
+				margin-left: 215px;
 				margin-top: -33px;
-				font-size: 18px;
+				font-size: 16px;
 				background-color: #35383c;
 				border: none;
 				cursor: pointer;
+				&:focus {
+					outline: none;
+				}
 			}
 		}
 	}
@@ -193,7 +201,7 @@ $Myr: 'Myriad', Arial, sans-serif;
 	width: 1160px;
 	margin: $auto;
 	height: 340px;
-	&__one, &__two, &__three {
+	.chapter {
 		width: 33%;
 		float: left;
 		margin-left: 3px;
@@ -206,13 +214,13 @@ $Myr: 'Myriad', Arial, sans-serif;
 			font-family: Arial;
 			padding-right: 30px;
 		}
-		&__figure {
+		.figure {
 			float: left;
 			width: 240px;
 			&__img {
 				margin-top: 20px;
 			}
-			&__heading {
+			&__head {
 				margin-top: 10px;
 				color: $grey;
 				font-size: 20px;
@@ -235,21 +243,22 @@ $Myr: 'Myriad', Arial, sans-serif;
 				& span {
 					color: $blue;
 				}
+				&:hover {
+					color: $blue;
+					& span {
+						color: $grey; 
+					}
+				}
 			}
 		}
 	}
 }
-.chapters__one__figure__link:hover, .chapters__two__figure__link:hover, .chapters__three__figure__link:hover {
-	color: $blue;
-	& span {
-		color: $grey; 
-	}
-}
+
 /* //////CHAPTERS---CHAPTERS---CHAPTERS---CHAPTERS */
 
 /* SERVICES---SERVICES---SERVICES---SERVICES */
 
-.service {
+.services__wrap {
 	width: 100%;
 	height: 500px;
 	background-color: $grey;
@@ -263,14 +272,14 @@ $Myr: 'Myriad', Arial, sans-serif;
 			padding-top: 40px;
 			padding-bottom: 50px;
 		}
-		&__figure {
+		.service {
 			float: left;
 			margin-right: 40px;
 			& a img {
 				padding-bottom: 40px;
 				display: block;
 			}
-			&__figcaption__link {
+			&__link {
 				width: 100%;
 				font-size: 16px;
 				color: white;
@@ -284,7 +293,7 @@ $Myr: 'Myriad', Arial, sans-serif;
 				}
 			}
 		}
-		.services__figure--four {
+		.service--four {
 			margin: 0;
 		}
 	}
@@ -301,14 +310,14 @@ $Myr: 'Myriad', Arial, sans-serif;
 /* //////SERVICES---SERVICES---SERVICES---SERVICES */
 
 /* NEWS---NEWS---NEWS---NEWS */
-.grey {
+.lightgrey {
 	width: 100%;
 	background-color: #f7f7f7;
 	height: 540px;
 	&__wrap {
 		width: 1160px;
 		margin: $auto;
-		&__news {
+		.news {
 			height: 540px;
 			width: 580px;
 			float: left;
@@ -359,12 +368,12 @@ $Myr: 'Myriad', Arial, sans-serif;
 				margin-top: 30px;
 			}
 		}
-		.grey__wrap__news__month, .grey__wrap__news__date {
+		.news__month, .news__date {
 			height: 40px;
 			width: 40px;
 			position: absolute;
 		}
-		.grey__wrap__news__month {
+		.news__month {
 			margin-top: 150px;
 			margin-left: -15px;
 			background-color: $blue;
@@ -376,7 +385,7 @@ $Myr: 'Myriad', Arial, sans-serif;
 				padding-left: 10px
 			}
 		}
-		.grey__wrap__news__date {
+		.news__date {
 			margin-top: 190px;
 			margin-left: -15px;
 			background-color: $yellow;
@@ -389,17 +398,17 @@ $Myr: 'Myriad', Arial, sans-serif;
 				padding-left: 12px
 			}
 		}
-		.grey__wrap__news__month--second {
+		.news__month--second {
 			margin-top: 330px;
 			margin-left: -15px;
 		}
-		.grey__wrap__news__date--second {
+		.news__date--second {
 			margin-top: 370px;
 			margin-left: -15px;
 		}
 
 /* BANNERS---BANNERS---BANNERS---BANNERS */
-		&__banners {
+		.banners {
 			height: 540px;
 			width: 580px;
 			float: right;
@@ -411,8 +420,8 @@ $Myr: 'Myriad', Arial, sans-serif;
 				padding-top: 60px;
 				padding-bottom: 50px;
 			}
-			.accordion {
-				&__block {
+			.accordion__wrap {
+				.accordion {
 					&__btn span, &__btn  {
 						display: block;
 						cursor: pointer;
@@ -466,9 +475,9 @@ $Myr: 'Myriad', Arial, sans-serif;
 				}
 			}
 		}
-		.accordion__block__btn__active, .accordion__block__btn__active span {
+		.accordion__btn__active, .accordion__btn__active span {
 			color: white;
-			background-color: $yellow;
+			background-color: $yellow !important;
 		}
 /* //////BANNERS---BANNERS---BANNERS---BANNERS */
 	}
@@ -488,7 +497,7 @@ $Myr: 'Myriad', Arial, sans-serif;
 		&__item {
 			float: left;
 			list-style: none;
-			&__link {
+			.logos__link {
 				display: block;
 				background: url(../img/logos2.png) 0 0 no-repeat;
 				height: 57px;

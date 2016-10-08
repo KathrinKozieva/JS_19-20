@@ -28,22 +28,22 @@
     });
 
     $(function() {
-        $(".accordion__block__btn").on('click', function() {
-            $('.accordion__block__panel').css("display", "none");
-            $(".accordion__block__btn").removeClass('accordion__block__btn__active');
-            $(".accordion__block__btn span").html('+');
+        $(".accordion__btn").on('click', function() {
+            $('.accordion__panel').css("display", "none");
+            $(".accordion__btn").removeClass('accordion__btn__active');
+            $(".accordion__btn span").html('+');
             $(this).children('span').html('-');
-            $(this).addClass('accordion__block__btn__active').next().toggle(350);
+            $(this).addClass('accordion__btn__active').next().toggle(350);
         })
     });
 
     $(function() {
-        $(".services__figure__image").hover(
+        $(".service__image").hover(
             function(){
-                $(this).next('.myhover').stop().fadeIn(500);
+                $(this).next('.myhover').stop().fadeIn(200);
             },
             function(){
-                $(this).next('.myhover').stop().fadeOut(500);
+                $(this).next('.myhover').stop().fadeOut(200);
             })
     });
 
