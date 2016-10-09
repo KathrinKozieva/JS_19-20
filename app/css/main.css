@@ -228,7 +228,7 @@
       float: left;
       margin-right: 40px; }
       .services__wrap .services .service a img {
-        padding-bottom: 40px;
+        margin-bottom: 40px;
         display: block; }
         .services__wrap .services .service a img:hover {
           opacity: 0.95;
