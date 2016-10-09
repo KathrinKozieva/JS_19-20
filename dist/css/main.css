@@ -22,41 +22,41 @@
     .header .icon__item {
       float: left;
       list-style: none; }
-      .header .icon__item__link {
+      .header .icon__item .icon__link {
         display: block;
         background: url(../img/logos.png) 0 0 no-repeat;
         height: 16px;
         width: 8px;
         margin-left: 8px; }
-        .header .icon__item__link:hover {
+        .header .icon__item .icon__link:hover {
           -webkit-transition-delay: 0.1s;
                   transition-delay: 0.1s;
           background-position: 0 -24px; }
-        .header .icon__item__link--second {
+        .header .icon__item .icon__link--second {
           width: 16px;
           background-position: -15px 1px; }
-          .header .icon__item__link--second:hover {
+          .header .icon__item .icon__link--second:hover {
             -webkit-transition-delay: 0.1s;
                     transition-delay: 0.1s;
             background-position: -15px -23px; }
-        .header .icon__item__link--third {
+        .header .icon__item .icon__link--third {
           width: 16px;
           background-position: -40px 0; }
-          .header .icon__item__link--third:hover {
+          .header .icon__item .icon__link--third:hover {
             -webkit-transition-delay: 0.1s;
                     transition-delay: 0.1s;
             background-position: -40px -24px; }
-        .header .icon__item__link--fourth {
+        .header .icon__item .icon__link--fourth {
           width: 16px;
           background-position: -64px 0; }
-          .header .icon__item__link--fourth:hover {
+          .header .icon__item .icon__link--fourth:hover {
             -webkit-transition-delay: 0.1s;
                     transition-delay: 0.1s;
             background-position: -64px -24px; }
-        .header .icon__item__link--fifth {
+        .header .icon__item .icon__link--fifth {
           width: 16px;
           background-position: -88px 0; }
-          .header .icon__item__link--fifth:hover {
+          .header .icon__item .icon__link--fifth:hover {
             -webkit-transition-delay: 0.1s;
                     transition-delay: 0.1s;
             background-position: -88px -24px; }
@@ -73,7 +73,7 @@
         border-right: 1px solid #181a1d; }
         .header .navigation .nav__item:first-child {
           background-color: #248cec; }
-        .header .navigation .nav__item__link {
+        .header .navigation .nav__item .nav__link {
           text-decoration: none;
           display: block;
           height: 56px;
@@ -84,7 +84,7 @@
           font-family: "Myriad", Arial, sans-serif;
           font-size: 12px;
           color: white; }
-          .header .navigation .nav__item__link:hover {
+          .header .navigation .nav__item .nav__link:hover {
             color: #f4b60d;
             -webkit-transition-delay: 0.1s;
                     transition-delay: 0.1s; }
@@ -230,6 +230,10 @@
       .services__wrap .services .service a img {
         padding-bottom: 40px;
         display: block; }
+        .services__wrap .services .service a img:hover {
+          opacity: 0.95;
+          -webkit-transition-delay: 0.1s;
+                  transition-delay: 0.1s; }
       .services__wrap .services .service__link {
         width: 100%;
         font-size: 16px;
@@ -247,9 +251,7 @@
   height: 260px;
   width: 260px;
   position: absolute;
-  margin-top: -300px;
-  background-image: url(../img/serviceHover.png);
-  display: none; }
+  opacity: 0; }
 
 /* //////SERVICES---SERVICES---SERVICES---SERVICES */
 /* NEWS---NEWS---NEWS---NEWS */
@@ -262,31 +264,31 @@
     margin: 0 auto;
     /* BANNERS---BANNERS---BANNERS---BANNERS */
     /* //////BANNERS---BANNERS---BANNERS---BANNERS */ }
-    .lightgrey__wrap .news {
+    .lightgrey__wrap .updates {
       height: 540px;
       width: 580px;
       float: left; }
-      .lightgrey__wrap .news__paragraph {
+      .lightgrey__wrap .updates__paragraph {
         color: #2a2d32;
         font-family: "Myriad", Arial, sans-serif;
         font-size: 24px;
         font-weight: bold;
         padding-top: 60px;
         padding-bottom: 50px; }
-      .lightgrey__wrap .news__one img, .lightgrey__wrap .news__two img {
+      .lightgrey__wrap .updates .news img {
         float: left;
         height: 150px;
         width: 150px;
         margin-right: 30px; }
-      .lightgrey__wrap .news__one__link, .lightgrey__wrap .news__two__link {
+      .lightgrey__wrap .updates .news__link {
         color: #2a2d32;
         font-family: "Myriad", Arial, sans-serif;
         font-size: 16px;
         font-weight: bold;
         text-decoration: none; }
-        .lightgrey__wrap .news__one__link:hover, .lightgrey__wrap .news__two__link:hover {
+        .lightgrey__wrap .updates .news__link:hover {
           color: #248cec; }
-      .lightgrey__wrap .news__one__p, .lightgrey__wrap .news__one__text, .lightgrey__wrap .news__two__p, .lightgrey__wrap .news__two__text {
+      .lightgrey__wrap .updates .news__p, .lightgrey__wrap .updates .news__text {
         padding-top: 10px;
         padding-bottom: 5px;
         color: #8a8a8a;
@@ -294,29 +296,29 @@
         font-size: 13px;
         line-height: 20px;
         letter-spacing: -0.5px; }
-        .lightgrey__wrap .news__one__p a, .lightgrey__wrap .news__one__text a, .lightgrey__wrap .news__two__p a, .lightgrey__wrap .news__two__text a {
+        .lightgrey__wrap .updates .news__p a, .lightgrey__wrap .updates .news__text a {
           text-decoration: none;
           color: #248cec; }
-          .lightgrey__wrap .news__one__p a:hover, .lightgrey__wrap .news__one__text a:hover, .lightgrey__wrap .news__two__p a:hover, .lightgrey__wrap .news__two__text a:hover {
+          .lightgrey__wrap .updates .news__p a:hover, .lightgrey__wrap .updates .news__text a:hover {
             color: #f4b60d; }
-      .lightgrey__wrap .news__two {
+      .lightgrey__wrap .updates .news--second {
         clear: both;
         margin-top: 30px; }
-    .lightgrey__wrap .news__month, .lightgrey__wrap .news__date {
+    .lightgrey__wrap .updates__month, .lightgrey__wrap .updates__date {
       height: 40px;
       width: 40px;
       position: absolute; }
-    .lightgrey__wrap .news__month {
+    .lightgrey__wrap .updates__month {
       margin-top: 150px;
       margin-left: -15px;
       background-color: #248cec;
       color: white;
       font-family: "Myriad", Arial, sans-serif;
       font-size: 15px; }
-      .lightgrey__wrap .news__month p {
+      .lightgrey__wrap .updates__month p {
         padding-top: 10px;
         padding-left: 10px; }
-    .lightgrey__wrap .news__date {
+    .lightgrey__wrap .updates__date {
       margin-top: 190px;
       margin-left: -15px;
       background-color: #f4b60d;
@@ -324,27 +326,27 @@
       font-family: "Myriad", Arial, sans-serif;
       font-size: 18px;
       font-weight: bold; }
-      .lightgrey__wrap .news__date p {
+      .lightgrey__wrap .updates__date p {
         padding-top: 11px;
         padding-left: 12px; }
-    .lightgrey__wrap .news__month--second {
+    .lightgrey__wrap .updates__month--second {
       margin-top: 330px;
       margin-left: -15px; }
-    .lightgrey__wrap .news__date--second {
+    .lightgrey__wrap .updates__date--second {
       margin-top: 370px;
       margin-left: -15px; }
     .lightgrey__wrap .banners {
       height: 540px;
       width: 580px;
       float: right; }
-      .lightgrey__wrap .banners__paragraph {
+      .lightgrey__wrap .banners p {
         color: #2a2d32;
         font-family: "Myriad", Arial, sans-serif;
         font-size: 24px;
         font-weight: bold;
         padding-top: 60px;
         padding-bottom: 50px; }
-      .lightgrey__wrap .banners .accordion__wrap .accordion__btn span, .lightgrey__wrap .banners .accordion__wrap .accordion__btn {
+      .lightgrey__wrap .banners .accordion__btn span, .lightgrey__wrap .banners .accordion__btn {
         display: block;
         cursor: pointer;
         width: 40px;
@@ -361,21 +363,21 @@
         border: none;
         -webkit-box-shadow: 0px 0px 0.5px 0px rgba(0, 0, 0, 0.2);
         box-shadow: 0px 0px 0.5px 0px rgba(0, 0, 0, 0.2); }
-        .lightgrey__wrap .banners .accordion__wrap .accordion__btn span:hover, .lightgrey__wrap .banners .accordion__wrap .accordion__btn:hover {
-          background-color: #eee;
+        .lightgrey__wrap .banners .accordion__btn span:hover, .lightgrey__wrap .banners .accordion__btn:hover {
+          background-color: #eee !important;
           color: #f4b60d; }
-          .lightgrey__wrap .banners .accordion__wrap .accordion__btn span:hover span, .lightgrey__wrap .banners .accordion__wrap .accordion__btn:hover span {
+          .lightgrey__wrap .banners .accordion__btn span:hover span, .lightgrey__wrap .banners .accordion__btn:hover span {
             color: #f4b60d;
-            background-color: #eee; }
-      .lightgrey__wrap .banners .accordion__wrap .accordion__btn {
+            background-color: #eee !important; }
+      .lightgrey__wrap .banners .accordion__btn {
         width: 560px;
         height: 40px;
         font-size: 13px; }
-        .lightgrey__wrap .banners .accordion__wrap .accordion__btn:focus {
+        .lightgrey__wrap .banners .accordion__btn:focus {
           outline: none; }
-        .lightgrey__wrap .banners .accordion__wrap .accordion__btn span {
+        .lightgrey__wrap .banners .accordion__btn span {
           border-right: 1px solid #f7f7f7; }
-      .lightgrey__wrap .banners .accordion__wrap .accordion__panel {
+      .lightgrey__wrap .banners .accordion__panel {
         width: 520px;
         max-height: 300px;
         overflow-y: auto;
@@ -386,7 +388,7 @@
         display: none;
         line-height: 20px;
         padding-bottom: 25px; }
-    .lightgrey__wrap .accordion__btn__active, .lightgrey__wrap .accordion__btn__active span {
+    .lightgrey__wrap .accordion__active, .lightgrey__wrap .accordion__active span {
       color: white;
       background-color: #f4b60d !important; }
 
@@ -400,57 +402,57 @@
     float: left;
     position: relative;
     overflow: hidden; }
-    .logos__wrap .logos__item {
+    .logos__wrap .logos li {
       float: left;
       list-style: none; }
-      .logos__wrap .logos__item .logos__link {
+      .logos__wrap .logos li .logos__link {
         display: block;
         background: url(../img/logos2.png) 0 0 no-repeat;
         height: 57px;
         width: 120px;
         margin-left: 40px;
         margin-top: 95px; }
-        .logos__wrap .logos__item .logos__link:hover {
+        .logos__wrap .logos li .logos__link:hover {
           -webkit-transition-delay: 0.1s;
                   transition-delay: 0.1s;
           background-position: 0 -64px; }
-        .logos__wrap .logos__item .logos__link--second {
+        .logos__wrap .logos li .logos__link--second {
           width: 145px;
           background-position: -120px 0; }
-          .logos__wrap .logos__item .logos__link--second:hover {
+          .logos__wrap .logos li .logos__link--second:hover {
             -webkit-transition-delay: 0.1s;
                     transition-delay: 0.1s;
             background-position: -120px -64px; }
-        .logos__wrap .logos__item .logos__link--third {
+        .logos__wrap .logos li .logos__link--third {
           width: 185px;
           height: 59px;
           background-position: -265px 0; }
-          .logos__wrap .logos__item .logos__link--third:hover {
+          .logos__wrap .logos li .logos__link--third:hover {
             -webkit-transition-delay: 0.1s;
                     transition-delay: 0.1s;
             background-position: -265px -64px; }
-        .logos__wrap .logos__item .logos__link--fourth {
+        .logos__wrap .logos li .logos__link--fourth {
           width: 144px;
           background-position: -450px 0; }
-          .logos__wrap .logos__item .logos__link--fourth:hover {
+          .logos__wrap .logos li .logos__link--fourth:hover {
             -webkit-transition-delay: 0.1s;
                     transition-delay: 0.1s;
             background-position: -450px -66px; }
-        .logos__wrap .logos__item .logos__link--fifth {
+        .logos__wrap .logos li .logos__link--fifth {
           width: 143px;
           height: 56px;
           background-position: -595px 0; }
-          .logos__wrap .logos__item .logos__link--fifth:hover {
+          .logos__wrap .logos li .logos__link--fifth:hover {
             -webkit-transition-delay: 0.1s;
                     transition-delay: 0.1s;
             background-position: -595px -66px; }
-        .logos__wrap .logos__item .logos__link--sixth {
+        .logos__wrap .logos li .logos__link--sixth {
           width: 113px;
           height: 61px;
           background-position: -738px 0;
           margin-top: 93px;
           margin-left: 30px; }
-          .logos__wrap .logos__item .logos__link--sixth:hover {
+          .logos__wrap .logos li .logos__link--sixth:hover {
             -webkit-transition-delay: 0.1s;
                     transition-delay: 0.1s;
             background-position: -738px -61px; }
@@ -463,25 +465,25 @@
     width: 1160px;
     height: 320px;
     margin: 0 auto; }
-    .menu__wrap .menu__block {
+    .menu__wrap .menu .block {
       width: 290px;
       float: left;
       padding-top: 65px; }
-      .menu__wrap .menu__block__heading {
+      .menu__wrap .menu .block__heading {
         color: #fff;
         font-family: "Myriad", Arial, sans-serif;
         font-size: 16px;
         line-height: 24px;
         padding-bottom: 30px; }
-      .menu__wrap .menu__block__link {
+      .menu__wrap .menu .block__link {
         text-decoration: none;
         font-family: Arial, sans-serif;
         color: #797a7c;
         line-height: 37px;
         letter-spacing: -0.5px; }
-        .menu__wrap .menu__block__link:hover {
+        .menu__wrap .menu .block__link:hover {
           color: #248cec; }
-      .menu__wrap .menu__block__line {
+      .menu__wrap .menu .block__line {
         width: 250px;
         height: 1px;
         background-color: #393c40; }
@@ -494,20 +496,20 @@ footer {
     height: 60px;
     width: 1160px;
     margin: 0 auto; }
-    footer .footer__wrap__left {
+    footer .footer__wrap .footer__left {
       float: left; }
-      footer .footer__wrap__left p {
+      footer .footer__wrap .footer__left p {
         float: left;
         font-family: Arial, sans-serif;
         font-size: 12px;
         color: #797a7c;
         line-height: 60px;
         padding-right: 25px; }
-        footer .footer__wrap__left p img {
+        footer .footer__wrap .footer__left p img {
           padding-right: 10px; }
-    footer .footer__wrap__right {
+    footer .footer__wrap .footer__right {
       float: right; }
-      footer .footer__wrap__right p {
+      footer .footer__wrap .footer__right p {
         float: right;
         font-family: Arial, sans-serif;
         font-size: 12px;

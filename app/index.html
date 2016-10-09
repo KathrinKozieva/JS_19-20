@@ -25,19 +25,19 @@
 		<header class="header">
 			<img alt="icon" class="logo"	src="img/logo.png">
 			<ul class="icon">
-				<li class="icon__item"><a class="icon__item__link" href="#"></a></li>
-				<li class="icon__item"><a class="icon__item__link icon__item__link--second" href="#"></a></li>
-				<li class="icon__item"><a class="icon__item__link icon__item__link--third" href="#"></a></li>
-				<li class="icon__item"><a class="icon__item__link icon__item__link--fourth" href="#"></a></li>
-				<li class="icon__item"><a class="icon__item__link icon__item__link--fifth" href="#"></a></li>
+				<li class="icon__item"><a class="icon__link" href="#"></a></li>
+				<li class="icon__item"><a class="icon__link icon__link--second" href="#"></a></li>
+				<li class="icon__item"><a class="icon__link icon__link--third" href="#"></a></li>
+				<li class="icon__item"><a class="icon__link icon__link--fourth" href="#"></a></li>
+				<li class="icon__item"><a class="icon__link icon__link--fifth" href="#"></a></li>
 			</ul>
 			<nav class="navigation">
 				<ul class="nav">
-					<li class="nav__item"><a class="nav__item__link" href="#">HOME</a></li>
-					<li class="nav__item"><a class="nav__item__link" href="#">FEATURES</a></li>
-					<li class="nav__item"><a class="nav__item__link" href="#">SERVICES</a></li>
-					<li class="nav__item"><a class="nav__item__link" href="#">NEWS</a></li>
-					<li class="nav__item"><a class="nav__item__link" href="#">SHOP</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">HOME</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">FEATURES</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">SERVICES</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">NEWS</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">SHOP</a></li>
 				</ul>
 				<form>
 					<div class="search">
@@ -63,32 +63,32 @@
         <div class="chapters">
         	<div class="chapter">
         		<p class="chapter__paragraph">01</p>
-        		<figure class="figure">
+        		<div class="figure">
         			<img class="figure__img" src="img/settings.png" alt="icon">
-        			<figcaption class="figure__head">Power Inside</figcaption>
+        			<p class="figure__head">Power Inside</p>
         			<p class="figure__paragraph">Cum sociis natoque penatibus et magnis dis parturient montesmus.Pro vel nibh et elit mollis commodo et nec augueique</p>
         			<a class="figure__link" href="#">Read More <span>&#8594;</span></a>
-        		</figure>
+        		</div>
         	</div>
 
         	<div class="chapter">
         		<p class="chapter__paragraph">02</p>
-        		<figure class="figure">
+        		<div class="figure">
         			<img class="figure__img" src="img/02.png" alt="icon">
-        			<figcaption class="figure__head">New Technologies</figcaption>
+        			<p class="figure__head">New Technologies</p>
         			<p class="figure__paragraph">Cum sociis natoque penatibus et magnis dis parturient montesmus.Pro vel nibh et elit mollis commodo et nec augueique</p>
         			<a class="figure__link" href="#">Read More <span>&#8594;</span></a>
-        		</figure>
+        		</div>
         	</div>
 
         	<div class="chapter">
         		<p class="chapter__paragraph">03</p>
-        		<figure class="figure">
+        		<div class="figure">
         			<img class="figure__img" src="img/truck.png" alt="icon">
-        			<figcaption class="figure__head">Fast Support</figcaption>
+        			<p class="figure__head">Fast Support</p>
         			<p class="figure__paragraph">Cum sociis natoque penatibus et magnis dis parturient montesmus.Pro vel nibh et elit mollis commodo et nec augueique</p>
         			<a class="figure__link" href="#">Read More <span>&#8594;</span></a>
-        		</figure>
+        		</div>
         	</div>
 
         </div>
@@ -99,20 +99,36 @@
 				<p class="services__paragraph">Our Services</p>
 
 				<figure class="service service--one">
-					<a><img class="service__image" src="img/service1.png" alt="icon"><div class="myhover"></div></a>
-					<figcaption class="service__figcaption"><a class="service__link" href="#"><p>Schedule Servisec</p></a></figcaption>
+					<figcaption>
+						<a href="#">
+						<img class="myhover" src="img/serviceHover.png" alt="img"><img src="img/service1.png" alt="img">
+						</a>
+						<a class="service__link" href="#"><p>Schedule Services</p></a>
+					</figcaption>
 				</figure>
 				<figure class="service service--two">
-					<a><img class="service__image" src="img/service2.png" alt="icon"><div class="myhover"></div></a>
-					<figcaption class="service__figcaption"><a class="service__link" href="#"><p>Preventive Maintence</p></a></figcaption>
+					<figcaption>
+						<a href="#">
+						<img class="myhover" src="img/serviceHover.png" alt="img"><img src="img/service2.png" alt="img">
+						</a>
+						<a class="service__link" href="#"><p>Preventive Maintence</p></a>
+					</figcaption>
 				</figure>
 				<figure class="service service--three">
-					<a><img class="service__image" src="img/service3.png" alt="icon"><div class="myhover"></div></a>
-					<figcaption class="service__figcaption"><a class="service__link" href="#"><p>Tire &#38; Wheel Service</p></a></figcaption>
+					<figcaption>
+						<a href="#">
+						<img class="myhover" src="img/serviceHover.png" alt="img"><img src="img/service3.png" alt="img">
+						</a>
+						<a class="service__link" href="#"><p>Tire &#38; Wheel Services</p></a>
+					</figcaption>
 				</figure>
 				<figure class="service service--four">
-					<a><img class="service__image" src="img/service4.png" alt="icon"><div class="myhover"></div></a>
-					<figcaption class="service__figcaption"><a class="service__link" href="#"><p>Repair Services</p></a></figcaption>
+					<figcaption>
+						<a href="#">
+						<img class="myhover" src="img/serviceHover.png" alt="img"><img src="img/service4.png" alt="img">
+						</a>
+						<a class="service__link" href="#"><p>Repair Services</p></a>
+					</figcaption>
 				</figure>
 
         	</div>
@@ -121,29 +137,30 @@
         <div class="lightgrey">
 	        <div class="lightgrey__wrap">
 	        	
-				<div class="news">
-					<div class="news__month"><p>Jan</p></div><div class="news__date"><p>23</p></div>
-					<div class="news__month news__month--second"><p>Jan</p></div><div class="news__date news__date--second"><p>21</p></div>
+				<div class="updates">
+					<div class="updates__month"><p>Jan</p></div><div class="updates__date"><p>23</p></div>
+					<div class="updates__month updates__month--second"><p>Jan</p></div><div class="updates__date updates__date--second"><p>21</p></div>
 
-					<p class="news__paragraph">Latest News</p>
-					<div class="news__one">
+					<p class="updates__paragraph">Latest News</p>
+
+					<div class="news">
 						<img src="img/news1.png" alt="icon">
-						<a class="news__one__link" href="#">Advanced Machinery Helps Improve Quality</a>
-						<p class="news__one__p">by <a href="#">cmcmasters</a> Comments ( <a href="#">6</a> ) </p>
-						<p class="news__one__text">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem</p>
+						<a class="news__link" href="#">Advanced Machinery Helps Improve Quality</a>
+						<p class="news__p">by <a href="#">cmcmasters</a> Comments ( <a href="#">6</a> ) </p>
+						<p class="news__text">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem</p>
 					</div>
-					<div class="news__two">
+					<div class="news news--second">
 						<img src="img/news2.png" alt="icon">
-						<a class="news__two__link" href="#">Powerful Techniques for Advanced Service</a>
-						<p class="news__two__p">by <a href="#">cmcmasters</a> Comments ( <a href="#">3</a> ) </p>
-						<p class="news__two__text">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem</p>
+						<a class="news__link" href="#">Powerful Techniques for Advanced Service</a>
+						<p class="news__p">by <a href="#">cmcmasters</a> Comments ( <a href="#">3</a> ) </p>
+						<p class="news__text">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem</p>
 					</div>
 					 
 				</div>
 
 				<div class="banners">
-					<p class="banners__paragraph">Banner Place</p>
-					<div class="accordion__wrap">
+					<p>Banner Place</p>
+					<div>
 					 	<div class="accordion">
 						 	<button class="accordion__btn"><span>+</span>ACCORDION PANEL 1</button>
 							<div class="accordion__panel accordion__panel--first">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur</div>
@@ -167,68 +184,68 @@
 
 		<div class="logos__wrap">
 			<ul class="logos">
-				<li class="logos__item"><a class="logos__link" href="#"></a></li>
-				<li class="logos__item"><a class="logos__link logos__link--second" href="#"></a></li>
-				<li class="logos__item"><a class="logos__link logos__link--third" href="#"></a></li>
-				<li class="logos__item"><a class="logos__link logos__link--fourth" href="#"></a></li>
-				<li class="logos__item"><a class="logos__link logos__link--fifth" href="#"></a></li>
-				<li class="logos__item"><a class="logos__link logos__link--sixth" href="#"></a></li>
+				<li><a class="logos__link" href="#"></a></li>
+				<li><a class="logos__link logos__link--second" href="#"></a></li>
+				<li><a class="logos__link logos__link--third" href="#"></a></li>
+				<li><a class="logos__link logos__link--fourth" href="#"></a></li>
+				<li><a class="logos__link logos__link--fifth" href="#"></a></li>
+				<li><a class="logos__link logos__link--sixth" href="#"></a></li>
 			</ul>
 		</div>
 
 		<div class="menu__wrap">
 			<div class="menu">
-				<div class="menu__block">
-					<p class="menu__block__heading">SOCIALS</p>
-					<a class="menu__block__link" href="#">Facebook</a>
-					<div class="menu__block__line"></div>
-					<a class="menu__block__link" href="#">Flickr</a>
-					<div class="menu__block__line"></div>
-					<a class="menu__block__link" href="#">Twitter</a>
-					<div class="menu__block__line"></div>
-					<a class="menu__block__link" href="#">Vimeo</a>
+				<div class="block">
+					<p class="block__heading">SOCIALS</p>
+					<a class="block__link" href="#">Facebook</a>
+					<div class="block__line"></div>
+					<a class="block__link" href="#">Flickr</a>
+					<div class="block__line"></div>
+					<a class="block__link" href="#">Twitter</a>
+					<div class="block__line"></div>
+					<a class="block__link" href="#">Vimeo</a>
 				</div>
-				<div class="menu__block">
-					<p class="menu__block__heading">LINKS</p>
-					<a class="menu__block__link" href="#">How to Write a Blog</a>
-					<div class="menu__block__line"></div>
-					<a class="menu__block__link" href="#">Crease a Blog in 4 Steps</a>
-					<div class="menu__block__line"></div>
-					<a class="menu__block__link" href="#">15 Tips to Increase Traffic</a>
-					<div class="menu__block__line"></div>
-					<a class="menu__block__link" href="#">20 Blog Post Ideas</a>
+				<div class="block">
+					<p class="block__heading">LINKS</p>
+					<a class="block__link" href="#">How to Write a Blog</a>
+					<div class="block__line"></div>
+					<a class="block__link" href="#">Crease a Blog in 4 Steps</a>
+					<div class="block__line"></div>
+					<a class="block__link" href="#">15 Tips to Increase Traffic</a>
+					<div class="block__line"></div>
+					<a class="block__link" href="#">20 Blog Post Ideas</a>
 				</div>
-				<div class="menu__block">
-					<p class="menu__block__heading">BLOGROLL</p>
-					<a class="menu__block__link" href="#">Blogs Blog</a>
-					<div class="menu__block__line"></div>
-					<a class="menu__block__link" href="#">Roll Up Roll UP</a>
-					<div class="menu__block__line"></div>
-					<a class="menu__block__link" href="#">Blog Free</a>
-					<div class="menu__block__line"></div>
-					<a class="menu__block__link" href="#">Wordpress Blog</a>
+				<div class="block">
+					<p class="block__heading">BLOGROLL</p>
+					<a class="block__link" href="#">Blogs Blog</a>
+					<div class="block__line"></div>
+					<a class="block__link" href="#">Roll Up Roll UP</a>
+					<div class="block__line"></div>
+					<a class="block__link" href="#">Blog Free</a>
+					<div class="block__line"></div>
+					<a class="block__link" href="#">Wordpress Blog</a>
 				</div>
-				<div class="menu__block">
-					<p class="menu__block__heading">ABOUT US</p>
-					<a class="menu__block__link" href="#">Agriculture</a>
-					<div class="menu__block__line"></div>
-					<a class="menu__block__link" href="#">Harvest</a>
-					<div class="menu__block__line"></div>
-					<a class="menu__block__link" href="#">Company news</a>
-					<div class="menu__block__line"></div>
-					<a class="menu__block__link" href="#">Investors relations</a>
+				<div class="block">
+					<p class="block__heading">ABOUT US</p>
+					<a class="block__link" href="#">Agriculture</a>
+					<div class="block__line"></div>
+					<a class="block__link" href="#">Harvest</a>
+					<div class="block__line"></div>
+					<a class="block__link" href="#">Company news</a>
+					<div class="block__line"></div>
+					<a class="block__link" href="#">Investors relations</a>
 				</div>
 			</div>
 		</div>
 
 		<footer>
 			<div class="footer__wrap">
-				<div class="footer__wrap__left">
+				<div class="footer__left">
 					<p><img alt="icon" src="img/location.png">BuildHomeLtd. Street Name 12 23 45 Cityname</p>
 					<p><img alt="icon" src="img/phone.png">+123 900 123 456</p>
 					<p><img alt="icon" src="img/email.png">info&#64;buildhome.web</p>
 				</div>
-				<div class="footer__wrap__right">
+				<div class="footer__right">
 					<p>&#64; 2014 Build Home</p>
 				</div>
 			</div>

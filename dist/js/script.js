@@ -21,7 +21,7 @@
             })
             .jcarouselPagination();
      $('.jcarousel').jcarouselAutoscroll({
-            interval: 7000,
+            interval: 6000,
             target: "+=1",
             autostart: true
         });
@@ -30,25 +30,15 @@
     $(function() {
         $(".accordion__btn").on('click', function() {
             $('.accordion__panel').css("display", "none");
-            $(".accordion__btn").removeClass('accordion__btn__active');
+            $(".accordion__btn").removeClass('accordion__active');
             $(".accordion__btn span").html('+');
             $(this).children('span').html('-');
-            $(this).addClass('accordion__btn__active').next().toggle(350);
+            $(this).addClass('accordion__active').next().toggle(350);
         })
     });
 
-    $(function() {
-        $(".service__image").hover(
-            function(){
-                $(this).next('.myhover').stop().fadeIn(200);
-            },
-            function(){
-                $(this).next('.myhover').stop().fadeOut(200);
-            })
-    });
-
-
 /*SECOND TASK WITH UNDERSCORE*/
+
 var newInfo = localStorage.getItem('myData');
 var myInfo = JSON.parse(newInfo);
 console.log("Массив объектов из DATA JSON", myInfo);

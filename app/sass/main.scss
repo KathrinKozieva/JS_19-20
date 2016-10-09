@@ -34,7 +34,7 @@ $Myr: 'Myriad', Arial, sans-serif;
 		&__item {
 			float: left;
 			list-style: none;
-			&__link {
+			.icon__link {
 				display: block;
 				background: url(../img/logos.png) 0 0 no-repeat;
 				height: 16px;
@@ -93,7 +93,7 @@ $Myr: 'Myriad', Arial, sans-serif;
 				&:first-child {
 						background-color: $blue;
 					}
-				&__link {
+				.nav__link {
 					text-decoration: none;
 					display: block;
 					height: 56px;
@@ -278,6 +278,10 @@ $Myr: 'Myriad', Arial, sans-serif;
 			& a img {
 				padding-bottom: 40px;
 				display: block;
+				&:hover {
+					opacity: 0.95;
+					transition-delay: 0.1s;
+				}
 			}
 			&__link {
 				width: 100%;
@@ -302,9 +306,7 @@ $Myr: 'Myriad', Arial, sans-serif;
 	height: 260px;
 	width: 260px;
 	position: absolute;
-	margin-top: -300px;
-	background-image: url(../img/serviceHover.png);
-	display: none;
+	opacity: 0;
 }
 
 /* //////SERVICES---SERVICES---SERVICES---SERVICES */
@@ -317,7 +319,7 @@ $Myr: 'Myriad', Arial, sans-serif;
 	&__wrap {
 		width: 1160px;
 		margin: $auto;
-		.news {
+		.updates {
 			height: 540px;
 			width: 580px;
 			float: left;
@@ -329,7 +331,7 @@ $Myr: 'Myriad', Arial, sans-serif;
 				padding-top: 60px;
 				padding-bottom: 50px;
 			}
-			&__one, &__two {
+			.news {
 				& img {
 					float: left;
 					height: 150px;
@@ -363,17 +365,17 @@ $Myr: 'Myriad', Arial, sans-serif;
 					}
 				}
 			}
-			&__two {
+			.news--second {
 				clear: $clear;
 				margin-top: 30px;
 			}
 		}
-		.news__month, .news__date {
+		.updates__month, .updates__date {
 			height: 40px;
 			width: 40px;
 			position: absolute;
 		}
-		.news__month {
+		.updates__month {
 			margin-top: 150px;
 			margin-left: -15px;
 			background-color: $blue;
@@ -385,7 +387,7 @@ $Myr: 'Myriad', Arial, sans-serif;
 				padding-left: 10px
 			}
 		}
-		.news__date {
+		.updates__date {
 			margin-top: 190px;
 			margin-left: -15px;
 			background-color: $yellow;
@@ -398,11 +400,11 @@ $Myr: 'Myriad', Arial, sans-serif;
 				padding-left: 12px
 			}
 		}
-		.news__month--second {
+		.updates__month--second {
 			margin-top: 330px;
 			margin-left: -15px;
 		}
-		.news__date--second {
+		.updates__date--second {
 			margin-top: 370px;
 			margin-left: -15px;
 		}
@@ -412,7 +414,7 @@ $Myr: 'Myriad', Arial, sans-serif;
 			height: 540px;
 			width: 580px;
 			float: right;
-			&__paragraph{
+			& p {
 				color: $grey;
 				font-family: $Myr;
 				font-size: 24px;
@@ -420,62 +422,61 @@ $Myr: 'Myriad', Arial, sans-serif;
 				padding-top: 60px;
 				padding-bottom: 50px;
 			}
-			.accordion__wrap {
-				.accordion {
-					&__btn span, &__btn  {
-						display: block;
-						cursor: pointer;
-						width: 40px;
-						height: 40px;
-						margin-bottom: 5px;
-						background-color: white;
-						line-height: 40px;
-						text-align: center;
-						font-size: 26px;
-						color: black;
-						font-family: $Myr;
-						float: left;
-						text-decoration: none;
-						border: none;
-						-webkit-box-shadow: 0px 0px 0.5px 0px rgba(0, 0, 0, 0.2);
-						-moz-box-shadow:    0px 0px 0.5px 0px rgba(0, 0, 0, 0.2);
-						box-shadow:         0px 0px 0.5px 0px rgba(0, 0, 0, 0.2);
-						&:hover {
-							background-color: #eee;
+
+			.accordion {
+				&__btn span, &__btn  {
+					display: block;
+					cursor: pointer;
+					width: 40px;
+					height: 40px;
+					margin-bottom: 5px;
+					background-color: white;
+					line-height: 40px;
+					text-align: center;
+					font-size: 26px;
+					color: black;
+					font-family: $Myr;
+					float: left;
+					text-decoration: none;
+					border: none;
+					-webkit-box-shadow: 0px 0px 0.5px 0px rgba(0, 0, 0, 0.2);
+					-moz-box-shadow:    0px 0px 0.5px 0px rgba(0, 0, 0, 0.2);
+					box-shadow:         0px 0px 0.5px 0px rgba(0, 0, 0, 0.2);
+					&:hover {
+						background-color: #eee !important;
+						color: $yellow;
+						& span{
 							color: $yellow;
-							& span{
-								color: $yellow;
-								background-color: #eee;
-							}
+							background-color: #eee !important;
 						}
 					}
-					&__btn {
-						width: 560px;
-						height: 40px;
-						font-size: 13px;
-						&:focus {
-							outline: none;
-						}
-						& span {
-							border-right: 1px solid #f7f7f7;
-						}
+				}
+				&__btn {
+					width: 560px;
+					height: 40px;
+					font-size: 13px;
+					&:focus {
+						outline: none;
 					}
-					&__panel {
-						width: 520px;
-						max-height: 300px;
-						overflow-y: auto;
-						font-size: 13px;
-						font-family: $Myr;
-						color: $greytxt;
-						padding-left: 41px;
-						display: none;
-						line-height: 20px;
-						padding-bottom: 25px;
+					& span {
+						border-right: 1px solid #f7f7f7;
 					}
+				}
+				&__panel {
+					width: 520px;
+					max-height: 300px;
+					overflow-y: auto;
+					font-size: 13px;
+					font-family: $Myr;
+					color: $greytxt;
+					padding-left: 41px;
+					display: none;
+					line-height: 20px;
+					padding-bottom: 25px;
 				}
 			}
 		}
-		.accordion__btn__active, .accordion__btn__active span {
+		.accordion__active, .accordion__active span {
 			color: white;
 			background-color: $yellow !important;
 		}
@@ -494,7 +495,7 @@ $Myr: 'Myriad', Arial, sans-serif;
 		float: left;
 		position: relative;
 		overflow: hidden;
-		&__item {
+		li {
 			float: left;
 			list-style: none;
 			.logos__link {
@@ -568,7 +569,7 @@ $Myr: 'Myriad', Arial, sans-serif;
 		width: 1160px;
 		height: 320px;
 		margin: $auto;
-		&__block {
+		.block {
 			width: 290px;
 			float: left;
 			padding-top: 65px;
@@ -606,7 +607,7 @@ footer {
 		height: 60px;
 		width: 1160px;
 		margin: $auto;
-		&__left {
+		.footer__left {
 			float: left;
 			& p {
 				float: left;
@@ -620,7 +621,7 @@ footer {
 				}
 			}
 		}
-		&__right {
+		.footer__right {
 			float: right;
 			& p {
 				float: right;
